@@ -1,0 +1,87 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.modal-dialog {
+    max-width: 60vw !important;
+    max-height: 100vh !important;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.modal-body {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.productCard {
+  min-height: 100%;
+}
+
+.reasons-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.reason-item {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  color: red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s linear infinite alternate;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+}
+
+.product-card {
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.hover-effect:hover {
+    color: white;
+}
